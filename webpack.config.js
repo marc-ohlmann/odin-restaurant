@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
       new HtmlWebpackPlugin({
-          title: 'Template Title',
+          title: 'Odin Restaurant',
       }),
   ],
   output: {

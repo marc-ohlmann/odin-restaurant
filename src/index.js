@@ -1,3 +1,7 @@
 import './style.css';
 
-console.log("hello world!");
+import {CreateRestaurantPage} from './restaurant';
+
+const htmlBody = document.querySelector("body");
+
+CreateRestaurantPage(htmlBody);
