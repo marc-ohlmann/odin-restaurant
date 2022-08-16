@@ -1,7 +1,28 @@
-import './style.css';
+import './style/style.css';
 
-import {CreateRestaurantPage} from './restaurant';
+import  {   tabbedPage,
+            pageTab
+        }   from './tabbedPage/tabbedPage';
 
-const htmlBody = document.querySelector("body");
+import  {   aboutTab,
+        }   from './pages/about';
 
-CreateRestaurantPage(htmlBody);
+import  {   contactTab,
+        }   from './pages/contact';
+
+import  {   menuTab,
+        }   from './pages/menu';
+
+
+const htmlContentParent = document.querySelector("body");
+
+const tabs = [
+    aboutTab, 
+    contactTab, 
+    menuTab,
+];
+
+const restaurantPage = tabbedPage("Duck Duck Eat", htmlContentParent, tabs);
+
+
+restaurantPage.initializePage();
