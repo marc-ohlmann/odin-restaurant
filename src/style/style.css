@@ -11,3 +11,43 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+body{
+    background-color: lightpink;
+}
+
+
+.tabbed-page-title{
+    background-color: aquamarine;
+    margin: 64px;
+    padding: 64px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.tabbed-page-button-box{
+    background-color: lightsalmon;
+    margin: 16px;
+    padding: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.tabbed-page-button{
+    background-color: lightcoral;
+    margin: 8px;
+    padding: 8px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tabbed-page-content-box{
+    background-color: lightgreen;
+    margin: 32px;
+    padding: 32px;
+}
