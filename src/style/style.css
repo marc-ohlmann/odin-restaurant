@@ -1,9 +1,17 @@
 
 :root{
-    --bright-color: lightblue;
-    --dark-color: purple;
     --error-color: red;
     --valid-color: green;
+
+    --bright-background-color: lightblue;
+    --bright-border-color: yellow;
+    --bright-button-color: orange;
+    --bright-text-color: white;
+
+    --dark-background-color: darkblue;
+    --dark-border-color: blue;
+    --dark-button-color: purple;
+    --dark-text-color: black;
 }
 
 *{
@@ -14,40 +22,49 @@
 
 
 body{
-    background-color: lightpink;
+    background-color: var(--dark-background-color);
 }
 
 
 .tabbed-page-title{
-    background-color: aquamarine;
     margin: 64px;
     padding: 64px;
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
+    color: var(--bright-text-color);
+    background-color: var(--dark-color);
 }
 
 .tabbed-page-button-box{
-    background-color: lightsalmon;
     margin: 16px;
     padding: 16px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    background-color: var(--bright-background-color);
 }
 
 .tabbed-page-button{
-    background-color: lightcoral;
     margin: 8px;
     padding: 8px;
     font-size: larger;
     font-weight: bold;
+    color: var(--bright-text-color);
+    background-color: var(--dark-button-color);
+    border-color: var(--dark-border-color);
+    border-radius: 12px;
+}
+
+.tabbed-page-button:hover{
+    color: var(--dark-text-color);
+    background-color: var(--bright-button-color);
+    border-color: var(--bright-border-color);
 }
 
 .tabbed-page-content-box{
-    background-color: lightgreen;
     margin: 32px;
     padding: 32px;
+    background-color: var(--bright-background-color);
 }
