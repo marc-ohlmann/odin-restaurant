@@ -17,9 +17,9 @@ import  {   menuTab,
 const htmlContentParent = document.querySelector("body");
 
 const tabs = [
-    aboutTab, 
-    contactTab, 
     menuTab,
+    contactTab, 
+    aboutTab, 
 ];
 
 const restaurantPage = tabbedPage("Duck Duck Eat", htmlContentParent, tabs);

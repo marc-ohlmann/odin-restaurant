@@ -61,7 +61,7 @@ const tabbedPage = (restaurantName, parentElement, tabs) => {
 
     const setupTab = (tab) => {
         clearTab();
-        tab.populateParent(getTabContentBox());
+        tab.populateParent(pageTabContentBox);
     };
 
     const setupDefaultTab = () => {
